@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --Dark_grayish_blue: hsl(227, 10%, 46%);
+    --Dark_gray: hsl(0, 0%, 59%);
+}
+section{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: var(--Dark_cyan);
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+     background-position: right 40vw bottom 70vh, top 60vh left 45vw;
+    background-size: 100%, 100%;
+
+}
+.container{
+    width: 90%;
+    max-width: 350px;
+    background-color: white;
+    border-radius:15px;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 50px 100px -20px rgba(8, 70, 94, 0.504); 
+}
+.background, .background img{
+    width: 100%;
+}
+.content{
+    width:100%;
+    text-align: center;
+    position: relative;  
+}
+.content img{
+    border-radius: 50%;
+    position: absolute;
+    top: -48px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 28%;
+    border: 5px solid white;
+}
+.info{
+    padding-top: 60px;
+    text-align: center;
+}
+.info h1{
+    padding:8px;
+    font-size: 18px;
+    color: var(--Very_dark_desaturated_blue);
+}
+.info h1 span{
+    font-weight: 400;
+    color: var(--Dark_gray);
+}
+.info p{
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.information{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    padding: 24px;
+    text-align: center;
+    color: var(--Dark_grayish_blue);
+}
+.information h2{
+    font-size: 18px;  
+}
+.information h2  {
+    color: var(--Very_dark_desaturated_blue);; 
+}
+.information p{
+    font-size: 13px;
+    letter-spacing: 1.5px;
+
+}
+.stats{
+text-align: center;
+}
+hr{
+    margin-block: 20px 0px;
+    border:none;
+    height: 0.3px;
+    background-color: var(--Dark_gray);
+}
+.footer{
+    color: black;
+    font-size: 14px;
+}
+@media (min-width: 768px){
+    section{
+         background-position: right 50vw bottom 50vh, top 50vh left 45vw;
+         background-size: 50%, 80%;
+    }
+}
