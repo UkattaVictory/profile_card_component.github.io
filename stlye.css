@@ -103,6 +103,7 @@ hr{
 .footer{
     color: black;
     font-size: 14px;
+    text-align: center;
 }
 @media (min-width: 768px){
     section{
